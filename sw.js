@@ -1,5 +1,5 @@
-var APP_PREFIX = 'ApplicationName_'     // Identifier for this app (this needs to be consistent across every cache update)
-var VERSION = 'version_01'              // Version of the off-line cache (change this value everytime you want to update cache)
+var APP_PREFIX = 'Event'     // Identifier for this app (this needs to be consistent across every cache update)
+var VERSION = 'version_02'              // Version of the off-line cache (change this value everytime you want to update cache)
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [                            // Add URL you want to cache in this list.
   '/worldhottesttour.uepa.com/',                     // If you have separate JS/CSS files,
@@ -7,8 +7,11 @@ var URLS = [                            // Add URL you want to cache in this lis
   '/worldhottesttour.uepa.com/queue.html',
   '/worldhottesttour.uepa.com/offline.html',
   '/worldhottesttour.uepa.com/js/bootstrap.bundle.min.js',
-  '/worldhottesttour.uepa.com/css/bootstrap.min.css'
+  '/worldhottesttour.uepa.com/css/bootstrap.min.css',
+  '/worldhottesttour.uepa.com/img/icon-192x192.png',
+  '/worldhottesttour.uepa.com/img/icon-256x256.png'
 ]
+
 
 // Respond with cached resources
 self.addEventListener('fetch', function (e) {
