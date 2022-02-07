@@ -53,8 +53,8 @@
       <h3 class="float-md-start mb-0">Logo</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-        <a class="nav-link" href="#mapa">Mapa</a>
-        <a class="nav-link" href="#contacto">Contacto</a>
+        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalMapa">Mapa</a>
+        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalContacto">Contacto</a>
       </nav>
     </div>
   </header>
@@ -63,7 +63,7 @@
     <h1>Event name</h1>
     <p class="lead">This is a template for building simple and beautiful home pages.</p>
     <p class="lead">
-      <a href="queue.html" class="btn btn-lg btn-secondary px-5 fw-bold border-white bg-white">BUY TICKETS</a>
+      <a href="queue.html" class="btn btn-lg btn-secondary px-5 fw-bold border-white bg-white text-dark">BUY TICKETS</a>
     </p>
   </main>
 
@@ -90,6 +90,47 @@
   </footer>
 </div>
 
+
+
+  
+  <!-- Modal Mapa -->
+<div class="modal text-dark fade" id="modalMapa" tabindex="-1" aria-labelledby="modalMapaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMapaLabel">Mapa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- end modal mapa -->
+  
+  
+  <!-- Modal Contacto -->
+  <div class="modal text-dark fade" id="modalContacto" tabindex="-1" aria-labelledby="modalContactoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalContactoLabel">Contacto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer d-none">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal Contacto -->
+  
 
 <script src="js/bootstrap.bundle.min.js"></script>
 
