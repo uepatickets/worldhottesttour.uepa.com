@@ -9,10 +9,10 @@
     <title>Offline · Bootstrap v5.1</title>
 
     <link rel="canonical" href="https://uepa.com">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json?ver=0.0.1">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=0.0.1" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="img/icon-192x192.png" sizes="192x192">
@@ -74,7 +74,7 @@
   <body class="d-flex h-100 text-center text-white bg-black">
 
     <script>if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js', { scope: '/' })
+        navigator.serviceWorker.register('sw.js', { scope: 'index.html' })
           .then(function(registration) {
                 console.log('Service Worker Registered');
           });
