@@ -16,7 +16,7 @@
  *
  */
 
-const version = "0.6.20";
+const version = "0.6.22";
 const cacheName = `evento-${version}`;
 self.addEventListener('install', e => {
   e.waitUntil(
@@ -25,6 +25,7 @@ self.addEventListener('install', e => {
         `/`,
         `index.html`,
         `queue.html`,
+        `offline.html`,
         `js/bootstrap.bundle.min.js`,
         `css/bootstrap.min.css`
       ])
