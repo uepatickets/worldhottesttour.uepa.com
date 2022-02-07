@@ -74,7 +74,7 @@
   <body class="d-flex h-100 text-center text-white bg-black">
 
     <script>if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js', { scope: '/' })
+        navigator.serviceWorker.register('sw.js', { scope: '/' })
           .then(function(registration) {
                 console.log('Service Worker Registered');
           });
@@ -106,7 +106,7 @@
     <div>
       <h3 class="float-md-start mb-0">Logo</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalMapa">Mapa</a>
         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalContacto">Contacto</a>
       </nav>
